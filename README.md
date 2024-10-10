@@ -34,3 +34,48 @@ An SAP Fiori application.
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
+
+# Zadanie rekrutacyjne TOYA S.A.
+
+## Opis
+
+Aplikacja napisana w frameworku SAPUI5, która wyświetla dane klientów w tabeli z możliwością sortowania i filtrowania.
+
+## Wymagania
+
+- **SAPUI5** w wersji 1.71.70
+- **SAP Business Application Studio** 
+
+## Jak uruchomić aplikację w SAP Business Application Studio
+
+1. **Otwórz SAP Business Application Studio**.
+
+2. **Klonuj repozytorium**:
+   - Otwórz terminal w SAP Business Application Studio.
+   - Wykonaj polecenie, aby sklonować swoje repozytorium (wstaw odpowiedni URL do swojego repozytorium):
+
+     ```bash
+     git clone <URL do Twojego repozytorium>
+     ```
+
+3. **Otwórz folder projektu**:
+   - Przejdź do folderu projektu:
+
+     ```bash
+     cd <nazwa-folderu>
+     ```
+
+4. **Uruchom aplikację**:
+   - W terminalu, aby uruchomić aplikację, użyj komendy:
+
+     ```bash
+     npm run start
+     ```
+
+
+5. **Otwórz aplikację w przeglądarce**:
+   - Po uruchomieniu aplikacji, otwórz przeglądarkę i przejdź do adresu:
+
+     ```
+     http://localhost:8080
+     ```
