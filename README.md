@@ -55,14 +55,14 @@ Aplikacja napisana w frameworku SAPUI5, która wyświetla dane klientów w tabel
    - Wykonaj polecenie, aby sklonować swoje repozytorium (wstaw odpowiedni URL do swojego repozytorium):
 
      ```bash
-     git clone <URL do Twojego repozytorium>
+     git clone https://github.com/jwojci/toya-task
      ```
 
 3. **Otwórz folder projektu**:
    - Przejdź do folderu projektu:
 
      ```bash
-     cd <nazwa-folderu>
+     cd toya
      ```
 
 4. **Uruchom aplikację**:
