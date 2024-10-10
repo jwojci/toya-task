@@ -1,0 +1,44 @@
+<mvc:View controllerName="toya.controller.ZadanieToya"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="customerPage" title="Dane Klientów">
+        <content>
+            <SearchField id="citySearchField" placeholder="Filtruj po mieście" search=".onSearch" />
+            <Table id="customerTable" items="{/Customers}">
+                <columns>
+                    <Column id="companyNameColumn">
+                        <header>
+                            <HBox alignContent="Stretch">
+                                <Text id="companyNameText" text="Nazwa firmy" />
+                                <Button id="sortCompanyButton" icon="sap-icon://sort-ascending" press=".onSortCompanyName" class="sorting-icon" />
+                            </HBox>
+                        </header>
+                    </Column>
+                    <Column id="companyAddressColumn">
+                        <Text id="companyAddressText" text="Adres" />
+                    </Column>
+                    <Column id="companyCityColumn">
+                        <Text id="companyCityText" text="Miasto" />
+                    </Column>
+                    <Column id="companyPostCodeColumn">
+                        <Text id="companyPostCodeText" text="Kod pocztowy" />
+                    </Column>
+                    <Column id="companyPhoneNumberColumn">
+                        <Text id="companyPhoneNumberText" text="Numer telefonu" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="customerListItem">
+                        <cells>
+                            <Text id="companyNameCellText" text="{CompanyName}" />
+                            <Text id="companyAddressCellText" text="{Address}" />
+                            <Text id="companyCityCellText" text="{City}" />
+                            <Text id="companyPostCodeCellText" text="{PostCode}" />
+                            <Text id="companyPhoneNumberCellText" text="{Phone}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

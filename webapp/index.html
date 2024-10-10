@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SAPUI5 Standalone App</title>
+    <script
+        id="sap-ui-bootstrap"
+        src="https://sapui5.hana.ondemand.com/1.71.70/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-resourceroots='{"toya": "./"}'
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true">
+    </script>
+    <script>
+        sap.ui.getCore().attachInit(function() {
+            sap.ui.require([
+                "sap/m/Shell",
+                "sap/ui/core/ComponentContainer"
+            ], function (Shell, ComponentContainer) {
+                new Shell({
+                    app: new ComponentContainer({
+                        name: "toya",
+                        height: "100%"
+                    })
+                }).placeAt("content");
+            }, function(oError) {
+                console.error("Error loading UI5 components:", oError);
+                document.body.innerHTML = "<h1>Error loading application</h1><p>" + oError.message + "</p>";
+            });
+        });
+    </script>
+</head>
+<body class="sapUiBody" id="content">
+    <!-- <h1>Loading...</h1> -->
+</body>
+</html>
