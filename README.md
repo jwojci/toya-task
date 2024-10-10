@@ -52,7 +52,7 @@ Aplikacja napisana w frameworku SAPUI5, która wyświetla dane klientów w tabel
 
 2. **Klonuj repozytorium**:
    - Otwórz terminal w SAP Business Application Studio.
-   - Wykonaj polecenie, aby sklonować swoje repozytorium (wstaw odpowiedni URL do swojego repozytorium):
+   - Wykonaj polecenie, aby sklonować swoje repozytorium:
 
      ```bash
      git clone https://github.com/jwojci/toya-task
